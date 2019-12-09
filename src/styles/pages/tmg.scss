@@ -8,19 +8,19 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #fff;
-}
 
-.hero h1:before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(to left, #ffe01b, #ffc63f);
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    margin-top: -16px;
+    h1:before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(to left, #ffe01b, #ffc63f);
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: -16px;
+    }
 }
 
 .tmg-fullwidth {
@@ -33,10 +33,6 @@
 
 .tmg-brand-yellow {
     border-top: 4px solid #ffc63f;
-
-    // img {
-    //     background-image: url('../../images/tmg/tm-logo-second.png');
-    // }
 }
 
 .tmg-brand-blue {
@@ -62,11 +58,11 @@
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: #fff;
     margin-right: 32px;
-}
 
-.overlay--icons img {
-    width: 200px;
-    height: 44px;
+    img {
+        width: 200px;
+        height: 44px;
+    }
 }
 
 .about-tmg {
