@@ -1,0 +1,153 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
+    background-image: url('../../images/tmg/hero/hero-01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.hero h1:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to left, #ffe01b, #ffc63f);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -16px;
+}
+
+.tmg-fullwidth {
+    width: 100%;
+}
+
+.tmg-header--marg {
+    margin-bottom: 40px;
+}
+
+.tmg-brand-yellow {
+    border-top: 4px solid #ffc63f;
+
+    // img {
+    //     background-image: url('../../images/tmg/tm-logo-second.png');
+    // }
+}
+
+.tmg-brand-blue {
+    border-top: 4px solid #008fd0;
+}
+
+.tmg-brand-purple {
+    border-top: 4px solid #3c0060;
+}
+
+.tmg-brand-light--blue {
+    border-top: 4px solid #00ade6;
+}
+
+.overlay--container {
+    position: absolute;
+    transform: translateX(50%) translateY(-50%);
+    right: 50%;
+}
+
+.overlay--icons {
+    padding: 32px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-right: 32px;
+}
+
+.overlay--icons img {
+    width: 200px;
+    height: 44px;
+}
+
+.about-tmg {
+    padding-top: 80px;
+}
+
+.tmg-brands {
+    display: flex;
+    padding: 32px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tmg-brands:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.tmg-brands--content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 32px;
+}
+
+.tmg-brands h3 + p {
+    margin-top: 4px;
+}
+
+.tmg-brands--image {
+    height: 120px;
+    width: 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .hero {
+        height: 241px;
+    }
+
+    .overlay--container {
+        flex-flow: column;
+        width: 267px;
+        transform: translateX(50%) translateY(-10%);
+        right: 50%;
+    }
+
+    .overlay--icons {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .ipad-section-pad {
+        padding-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .hero {
+        height: 285px;
+        background-image: url('../../images/tmg/hero/hero-mobile.png');
+        padding: 16px;
+    }
+
+    .overlay--container {
+        transform: translateX(50%) translateY(-10%);
+        right: 50%;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .overlay--icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tmg-brands {
+        align-items: center;
+    }
+
+    .tmg-brands--image {
+        height: 60px;
+        width: 60px;
+    }
+}

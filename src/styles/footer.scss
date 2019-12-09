@@ -1,0 +1,144 @@
+footer {
+    border-top: 4px solid #ffc63f;
+    background-color: #222222;
+    width: 100%;
+}
+
+footer p, footer li {
+    letter-spacing: normal;
+}
+
+.footer-content > p {
+    color: #babcbe;
+}
+
+.footer-container {
+    flex-direction: column;
+}
+
+.footer-second-container {
+    background-color: #000000;
+}
+
+.footer-second-container article:first-child {
+    height: 24px;
+}
+
+.footer-second-container article:first-child img {
+    height: 24px; 
+    width: 53px;
+}
+
+.footer-content {
+    max-width: 378px; 
+    font-size: 14px; 
+    line-height: 1.57;
+    width: 100%;
+}
+
+.footer--pad {
+    padding: 16px 0;
+}
+
+.footer--pad + p {
+    padding: 16px 0;
+}
+
+#icon-pad {
+    padding-top: 12px;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
+
+.legalLinks li {
+    margin-right: 16px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.legalLinks li a {
+    padding-right: 16px;
+    border-right: 1px solid #babcbe;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.29;
+    font-family: tmRegular;
+    letter-spacing: normal;
+}
+
+.legalLinks li a:hover {
+    text-decoration: underline;
+}
+
+.legalLinks, li:last-child {
+    border-right: 0;
+    margin-right: 0;
+}
+
+.footer-content-right p{
+    font-size: 18px;
+    font-family: tmMedium;
+}
+
+.footer-content-right a{
+    height: 40px; 
+    width: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .footer-first-container {
+        padding: 24px 16px;
+    }
+
+    .footer-second-container {
+        padding: 24px 16px;
+    }
+
+    .footer-second-container .tmg-wrapper {
+        flex-flow: column;
+    }
+    
+    .footer--pad {
+        padding: 0;
+    }
+
+    .footer-text{
+        text-align: left;
+    }
+
+    footer article + article {
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .footer-content {
+        float: left;
+    }
+
+    .footer-content-right {
+        float: right;
+    }
+
+    .footer-first-container {
+        padding: 48px 0;
+    }
+
+    .footer-second-container {
+        display: flex;
+        padding: 16px 0;
+    }
+
+    .footer-second-container .tmg-wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
